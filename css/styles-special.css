@@ -1,0 +1,7 @@
+* {
+    border: 1px solid red;
+}
+.font-principal {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
+}
