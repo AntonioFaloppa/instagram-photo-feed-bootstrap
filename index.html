@@ -4,315 +4,374 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Links Bootstrap-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <!--Links Bootstrap-->
+    <!--Link CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Links Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
-    <!--Links Google Fonts-->
-    <!--Links Personal Styles-->
+    <!--Link Personal Styles-->
     <link rel="stylesheet" href="./css/styles-special.css">
-    <!--Links Personal Styles-->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ee0cfaef62.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab957266cb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6beb2eb079.js" crossorigin="anonymous"></script>
+    <!-- Title -->
     <title>Photo Feed</title>
 </head>
 <body>
-    <!--Navbar principal-->
+    <!-- Main container fluid -->
     <div class="container-fluid">
-      <div class="row">
-          <nav class="navbar bg-light">
-              <div class="container-fluid">
-                <a class="navbar-brand font-principal" href="#">
-                  <img src="./images/icons/instagram.png" alt="" width="30" height="30" class="d-inline-block align-text-center">
-                  Instagram
-                </a>
-              </div>
-            </nav>
-          <!--Navbar principal-->
-          <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-      </div>
-      <div class="row">
+        <!-- Navbar -->
         <div class="row">
-          <ul class="nav nav-pills mb-1 justify-content-center mt-1 p-0" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                      type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
-                          class="fa-solid fa-grip"></i></button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                      type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
-                          class="fa-solid fa-square"></i></button>
-              </li>
-          </ul>
-          <div class="tab-content p-0" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <div class="container-fluid">
-                      <div class="row">
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/9/200/200" class="w-100" alt="">
-                          </div>
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/122/200/200" class="w-100" alt="">
-                          </div>
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/89/200/200" class="w-100" alt="">
-                          </div>
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/269/200/200" class="w-100" alt="">
-                          </div>
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/366/200/200" class="w-100" alt="">
-                          </div>
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/689/200/200" class="w-100" alt="">
-                          </div>
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/491/200/200" class="w-100" alt="">
-                          </div>
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/1/200/200" class="w-100" alt="">
-                          </div>
-                          <div class="col-12 col-md-4 mb-4">
-                              <img src="https://picsum.photos/id/2/200/200" class="w-100" alt="">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  <div class="container-fluid bg-light">
-                      <div class="row justify-content-center">
-                          <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
-                              <div class="bg-white mb-4 mx-auto mt-4 w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>My last photo</h5>
-                                      <p class="mb-0 text-secondary">9/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/9/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>356 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">This is my las photo of the feed.</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="bg-white mb-4 mx-auto w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>My last trip</h5>
-                                      <p class="mb-0 text-secondary">8/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/122/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>249 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">incredible photo.</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="bg-white mb-4 mx-auto w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>At home</h5>
-                                      <p class="mb-0 text-secondary">7/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/89/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>197 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">peaceful garden.</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="bg-white mb-4 mx-auto w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>TBT</h5>
-                                      <p class="mb-0 text-secondary">6/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/269/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>217 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">memories of my last trip. #Tbt</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="bg-white mb-4 mx-auto w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>Back at it!</h5>
-                                      <p class="mb-0 text-secondary">5/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/366/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>451 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">this is my day to day.</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="bg-white mb-4 mx-auto w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>At the beach</h5>
-                                      <p class="mb-0 text-secondary">4/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/689/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>168 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">Wow! incredible sunset.</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="bg-white mb-4 mx-auto w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>Hard work</h5>
-                                      <p class="mb-0 text-secondary">3/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/491/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>142 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">Not everything can be computer work.</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="bg-white mb-4 mx-auto w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>Programming</h5>
-                                      <p class="mb-0 text-secondary">2/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/1/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>264 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">At work!.</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="bg-white mb-4 mx-auto w-100 rounded">
-                                  <div class="d-flex justify-content-between px-2 align-items-center">
-                                      <h5>My first photo</h5>
-                                      <p class="mb-0 text-secondary">1/9</p>
-                                  </div>
-                                  <div class="col-12 col-md-4 w-100">
-                                      <img src="https://picsum.photos/id/2/200/200" class="w-100" alt="">
-                                  </div>
-                                  <div>
-                                      <p class="px-2"><strong>312 Likes</strong></p>
-                                  </div>
-                                  <div>
-                                      <p class="px-2">This is my first photo of the feed. I am excited about it!.</p>
-                                  </div>
-                                  <div class="d-flex text-secondary justify-content-between px-2">
-                                      <div>
-                                          <p><i class="fa-regular fa-heart"></i> Comment...</p>
-                                      </div>
-                                      <div>
-                                          <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
-      </div>
+            <div class="col-12 p-0">
+                <nav class="navbar bg-light p-3">
+                    <div class="d-flex justify-content-center align-items-center ps-5">
+                        <a class="navbar-brand font-principal" href="#">
+                            <img src="./images/icons/instagram.png" alt="" width="30" height="30" class="d-inline-block align-text-center">
+                            Instagram
+                        </a>
+                    </div>
+                    <!-- Contenedor modal y opciones -->
+                    <div class="col d-flex justify-content-end pe-5">
+                        <!-- Modal -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Create new post
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <form>
+                                        <div class="mx-2 my-2">
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="modal-body">
+                                        <button type="button" class="btn btn-light border"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <button type="button" class="btn btn-light border"><i
+                                                class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light border"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <!-- Botón opciones -->
+                        <div class="btn-group ms-3">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start mt-2">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                        <!-- Botón opciones -->
+                    </div>
+                    <!-- Contenedor modal y opciones -->
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <!-- Tabs photos and photo feed -->
+        <div class="row bg-light">
+            <div class="col-12 p-0">
+                <!-- Tabs -->
+                <ul class="nav nav-pills justify-content-center m-3" id="pills-tab" role="tablist">
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link active bg-secondary" id="pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#pills-gallery"
+                            type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                                class="fa-solid fa-grip"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-secondary" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                            type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                                class="fa-solid fa-square"></i></button>
+                    </li>
+                </ul>
+                <!-- Tabs -->
+                <!-- Tabs content -->
+                <div class="tab-content p-0" id="pills-tabContent">
+                    <!-- Tab content 1 -->
+                    <div class="tab-pane fade show active" id="pills-gallery" role="tabpanel" aria-labelledby="pills-gallery-tab">
+                        <div class="container-fluid">
+                            <div class="row ps-5 pe-5">
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                    <img src="https://cdn.vox-cdn.com/thumbor/kfwIZLLS6F25fQ9ySMrwXGW1tRY=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/2449662/shutterstock_149489132.0.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                    <img src="https://i.guim.co.uk/img/media/7d04c4cb7510a4bd9a8bec449f53425aeccee895/289_287_1442_866/master/1442.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=99e2c0e2a635db1637f30c70918f23f0" class="w-100" alt="">
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portrait-of-cat-sitting-on-sofa-at-home-royalty-free-image-1574708553.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*" class="w-100" alt="">
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                    <img src="https://t1.uc.ltmcdn.com/es/posts/4/0/8/como_es_el_gato_maine_coon_30804_600_square.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                    <img src="https://www.pouncepetinsurance.com.au/wp-content/uploads/2018/12/maine-coon-square.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                  <img src="https://azure.wgp-cdn.co.uk/app-yourcat/posts/iStock-1069514616.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/large-cat-breed-1553197454.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*" class="w-100" alt="">
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                    <img src="https://www.shelterluv.com/sites/default/files/animal_pics/1579/2022/06/12/12/20220612120130.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 p-1">
+                                    <img src="https://www.shelterluv.com/sites/default/files/animal_pics/1579/2022/06/21/14/20220621144554.png" class="w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab content 1 -->
+                    <!-- Tab content 2 -->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="container-fluid bg-light">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                                    <div class="bg-white mb-4 mx-auto mt-4 w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My last photo</h5>
+                                            <p class="text-secondary">9/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://cdn.vox-cdn.com/thumbor/kfwIZLLS6F25fQ9ySMrwXGW1tRY=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/2449662/shutterstock_149489132.0.jpg" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>600 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My eighth photo</h5>
+                                            <p class="text-secondary">8/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://i.guim.co.uk/img/media/7d04c4cb7510a4bd9a8bec449f53425aeccee895/289_287_1442_866/master/1442.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=99e2c0e2a635db1637f30c70918f23f0" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>100 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My seventh photo</h5>
+                                            <p class="text-secondary">7/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portrait-of-cat-sitting-on-sofa-at-home-royalty-free-image-1574708553.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>300 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3 mb-4">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My sixth photo</h5>
+                                            <p class="text-secondary">6/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://t1.uc.ltmcdn.com/es/posts/4/0/8/como_es_el_gato_maine_coon_30804_600_square.jpg" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>500 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My fifth photo</h5>
+                                            <p class="text-secondary">5/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://www.pouncepetinsurance.com.au/wp-content/uploads/2018/12/maine-coon-square.jpg" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>400 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My fourth photo</h5>
+                                            <p class="text-secondary">4/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://azure.wgp-cdn.co.uk/app-yourcat/posts/iStock-1069514616.jpg" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>150 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My third photo</h5>
+                                            <p class="text-secondary">3/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/large-cat-breed-1553197454.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>50 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My second photo</h5>
+                                            <p class="text-secondary">2/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://www.shelterluv.com/sites/default/files/animal_pics/1579/2022/06/12/12/20220612120130.png" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>500 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                        <div class="d-flex justify-content-between align-items-center pt-2 ps-3 pe-3 align-middle">
+                                            <h5>My first photo</h5>
+                                            <p class="text-secondary">1/9</p>
+                                        </div>
+                                        <div class="col-12 col-md-4 w-100">
+                                            <img src="https://www.shelterluv.com/sites/default/files/animal_pics/1579/2022/06/21/14/20220621144554.png" class="w-100" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 mb-1"><strong>450 Likes</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="ps-3 m-0">Just an example comment</p>
+                                        </div>
+                                        <div class="d-flex text-secondary justify-content-between pe-3 ps-3">
+                                            <div>
+                                                <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                            </div>
+                                            <div>
+                                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab content 2 -->
+                </div>
+                <!-- Tabs content -->
+            </div>
+        </div>
+        <!-- Tabs photos and photo feed -->
     </div>
+    <!-- Main container fluid -->
+    <!-- Links JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <!-- Links JS Bootstrap -->
 </body>
 </html>
